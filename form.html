@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" container="width=device-width, initial-scale=1.0" />
+        <title>Stylish Sign-Up Form</title>
+        <link rel="stylesheet" href="formstyle.css">
+    </head>
+<body>
+    <div class="form-container">
+        <h2>Sign Up</h2>
+    <form action="#" method="post" enctype="multipart/form-data">
+        <div class="row">
+            <div class="form-group">
+                <label for="fullname">Full Name</label>
+                <input type="text" id="fullname" name="fullname" required />
+            </div>
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" required />
+            </div>
+        </div>
+        <div class="row">
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required />
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" />
+            </div>
+        </div>
+           <div class="row">
+            <div class="form-group">
+                <label for="time">Time</label>
+                <input type="time" id="time" name="time" required />
+            </div>
+            <div class="form-group">
+                <label for="week">Week</label>
+                <input type="week" id="week" name="week"  />
+            </div>
+            </div>
+            <div class="row">
+                <div class="form-group">
+                    <label for="file">File Upload</label>
+                    <input type="file" id="file" name="file" required />
+                </div>
+                <div class="form-group">
+                    <label>Gender</label>
+                    <input type="radio" id="radio1" name="gender" value="male" />Male
+                    <input type="radio" id="radio2" name="gender" value="female" />Female
+                </div>
+            </div>
+            <div class="row">
+                <div class="form-group">
+                    <label for="birthdate">Date of Birth</label>
+                    <input type="date" id="birthdate" name="birthdate" />
+                </div>
+                <div class="form-group">
+                    <label for="country">Country</label>
+                    <select name="country" id="country">
+                        <option value="" disabled selected>Select location</option>
+                    <option value="option1">Nyarugenge</option>
+                    <option value="option2">Kicukiro</option>
+                    <option value="option3">Gasabo</option>   
+                </select>
+                </div>
+           </div>
+            <div class="form-group full-width">
+                <label for="bio">Short Bio</label>
+                <textarea name="bio" id="bio" rows="3" ></textarea>
+            </div>
+           <div class="form-group checkbox">
+            <input type="checkbox" id="terms" name="terms" required />
+            <label for="terms">I agree to the Terms and Conditions</label>
+           </div>
+           <div class="form-group submit">
+            <input type="submit" value="Sign Up" />
+           </div>
+        </div>
+    </form>
+    </div>
+</body>
+</html>
